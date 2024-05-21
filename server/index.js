@@ -20,3 +20,10 @@ app
   .on("error", (err) => {
     console.error("Error:", err.message);
   });
+
+  // nouvelle route get
+  const sayHello = (req, res) => {
+    res.send("Welcome to Wild Series !");
+  };
+  
+  app.get("/", sayHello);
